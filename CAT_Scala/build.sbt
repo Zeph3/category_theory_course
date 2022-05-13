@@ -6,3 +6,9 @@ lazy val root = (project in file("."))
   .settings(
     name := "CAT_Scala"
   )
+
+resolvers += ("Artima Maven Repository" at "https://repo.artima.com/releases")
+
+libraryDependencies += "org.scalactic" %% "scalactic" % "3.2.11"
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.11" % "test"
+
